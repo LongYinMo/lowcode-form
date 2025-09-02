@@ -11,7 +11,6 @@ const PropComponent: FC<QuestionParagraphPropsType> = (props: QuestionParagraphP
   // 初始化表单,props改变时更新表单
   useEffect(() => {
     form.setFieldsValue({ text, isCenter })
-    // eslint-disable-next-line
   }, [text, isCenter])
 
   function handleValuesChange() {

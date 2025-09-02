@@ -8,7 +8,8 @@ import { message } from 'antd'
 import { getToken } from '../utils/user-token'
 
 // 根据环境设置API基础URL
-const BASE_URL = process.env.NODE_ENV === 'production' ? 'https://questionnaire-mock.vercel.app' : ''
+const BASE_URL =
+  process.env.NODE_ENV === 'production' ? 'https://questionnaire-mock.vercel.app' : ''
 
 const instance = axios.create({
   baseURL: BASE_URL,

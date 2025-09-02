@@ -10,7 +10,6 @@ const PropComponent: FC<QuestionInfoPropsType> = (props: QuestionInfoPropsType) 
 
   useEffect(() => {
     form.setFieldsValue({ title, desc })
-    // eslint-disable-next-line
   }, [title, desc])
 
   function handleValuesChange() {

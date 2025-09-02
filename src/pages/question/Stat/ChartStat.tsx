@@ -31,7 +31,6 @@ const ChartStat: FC<PropsType> = (props: PropsType) => {
   //选中就请求数据
   useEffect(() => {
     if (selectedComponentId) run(id, selectedComponentId)
-    // eslint-disable-next-line
   }, [id, selectedComponentId])
 
   // // 生成统计图表

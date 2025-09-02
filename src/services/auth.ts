@@ -1,4 +1,4 @@
-import request from '../utils/request';
+import request from '../utils/request'
 
 /**
  * 用户登录
@@ -9,9 +9,9 @@ export const login = (data: { username: string; password: string }) => {
   return request({
     url: '/api/user/login',
     method: 'post',
-    data
-  });
-};
+    data,
+  })
+}
 
 /**
  * 用户注册
@@ -22,9 +22,9 @@ export const register = (data: { username: string; password: string; nickname?: 
   return request({
     url: '/api/user/register',
     method: 'post',
-    data
-  });
-};
+    data,
+  })
+}
 
 /**
  * 获取用户信息
@@ -33,6 +33,6 @@ export const register = (data: { username: string; password: string; nickname?: 
 export const getUserInfo = () => {
   return request({
     url: '/api/user/info',
-    method: 'get'
-  });
-};
+    method: 'get',
+  })
+}

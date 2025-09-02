@@ -16,10 +16,9 @@ todo封装
  * */
 function genComponent(c: ComponentConfType) {
   const { title, type, Component, defaultProps } = c // 每个组件的信息，是从 redux store 获取的（服务端获取）
-  // eslint-disable-next-line
+
   const dispatch = useDispatch()
 
-  // eslint-disable-next-line
   const handleClick = useCallback(() => {
     dispatch(
       addComponent({
@@ -29,7 +28,6 @@ function genComponent(c: ComponentConfType) {
         props: defaultProps,
       })
     )
-    // eslint-disable-next-line
   }, [])
 
   return (

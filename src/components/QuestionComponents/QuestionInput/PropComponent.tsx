@@ -15,7 +15,6 @@ const PropComponent: FC<QuestionInputPropsType> = (props: QuestionInputPropsType
   //监测title和placeholder的变化
   useEffect(() => {
     form.setFieldsValue({ title, placeholder }) // 设置表单的值
-    // eslint-disable-next-line
   }, [title, placeholder])
 
   // 监听表单值的变化

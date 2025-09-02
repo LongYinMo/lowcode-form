@@ -13,7 +13,6 @@ const PropComponent: FC<QuestionTitlePropsType> = (props: QuestionTitlePropsType
       level,
       isCenter,
     })
-    // eslint-disable-next-line
   }, [text, level, isCenter])
 
   //值变化时，触发onChange,onChange函数改变redux

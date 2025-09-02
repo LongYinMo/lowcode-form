@@ -10,7 +10,6 @@ const PropComponent: FC<QuestionRadioPropsType> = (props: QuestionRadioPropsType
 
   useEffect(() => {
     form.setFieldsValue({ title, isVertical, value, options })
-    // eslint-disable-next-line
   }, [title, isVertical, value, options])
 
   function handleValuesChange() {

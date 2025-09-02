@@ -50,13 +50,11 @@ function useLoadQuestionData() {
 
     // 把 pageInfo 存储到 redux store
     dispatch(resetPageInfo({ title, desc, js, css, isPublished }))
-    // eslint-disable-next-line
   }, [data])
 
   // 判断 id 变化，执行 ajax 加载问卷数据
   useEffect(() => {
     run(id)
-    // eslint-disable-next-line
   }, [id])
 
   return [loading, error]

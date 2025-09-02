@@ -15,7 +15,6 @@ const PageSetting: FC = () => {
   // // 实时更新表单内容
   useEffect(() => {
     form.setFieldsValue(pageInfo)
-    // eslint-disable-next-line
   }, [pageInfo])
 
   function handleValuesChange() {

@@ -6,7 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build",
-        "buildCommand": "npm run build:vercel"
+        "buildCommand": "cross-env HUSKY=0 npm run build:vercel"
       }
     }
   ],
